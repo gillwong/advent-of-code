@@ -1,7 +1,9 @@
 #pragma once
 
-#include <iostream>
+#include <fstream>
+#include <ostream>
 #include <string>
+#include <tuple>
 #include <utility>
 
 struct CmdError {
@@ -10,3 +12,6 @@ struct CmdError {
 };
 
 std::pair<std::ifstream *, std::ostream *> processArgs(int argc, char *argv[]);
+
+std::tuple<std::ifstream *, std::ostream *, unsigned int>
+processMultiArgs(int argc, char *argv[]);
