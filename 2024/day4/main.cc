@@ -1,4 +1,4 @@
-#include "../lib/utils.h"
+#include "utils.h"
 #include "day4.h"
 #include <fstream>
 #include <ostream>
