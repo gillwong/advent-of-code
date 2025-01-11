@@ -1,4 +1,4 @@
-IMPL := SINGLE # SINGLE or MULTIPLE
+IMPL := SINGLE # SINGLE or AUTO or MULTI
 
 CXX = clang++
 CXXFLAGS = -std=c++17 -g -Wall -Wextra -MMD -I ../lib/ -D"$(IMPL)"
