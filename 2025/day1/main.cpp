@@ -5,7 +5,7 @@
 #include "day1.h"
 
 struct CmdError final : std::runtime_error {
-    explicit CmdError(std::string msg) : std::runtime_error(msg) {
+    explicit CmdError(const std::string &msg) : std::runtime_error(msg) {
     }
 };
 
