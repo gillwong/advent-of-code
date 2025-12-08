@@ -48,3 +48,9 @@ add_executable(day4 day4/main.cpp
         day4/day4.cpp)
 target_compile_features(day4 PRIVATE cxx_std_23)
 target_link_libraries(day4 PRIVATE compiler_flags)
+
+add_executable(day5 day5/main.cpp
+        day5/day5.h
+        day5/day5.cpp)
+target_compile_features(day5 PRIVATE cxx_std_23)
+target_link_libraries(day5 PRIVATE compiler_flags)
